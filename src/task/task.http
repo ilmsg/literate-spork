@@ -1,0 +1,14 @@
+@host=http://localhost:3009/api/v1
+
+### get
+GET {{host}}/tasks
+
+###
+POST {{host}}/tasks
+Content-Type: application/json
+
+{
+  "name": "First Task",
+  "description": "This is the first task",
+  "userId": 1
+}

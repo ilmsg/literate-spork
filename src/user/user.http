@@ -1,0 +1,18 @@
+
+@host=http://localhost:3009/api/v1
+
+###
+GET {{host}}/users
+
+###
+GET {{host}}/users/1
+
+###
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "email": "scott@gmail.com",
+  "password": "scott",
+  "name": "scott"
+}
